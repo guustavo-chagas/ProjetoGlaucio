@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --background: #000000;
+    --darkblue: #0b0653;
+    --box: #21272bc9;
+    --lightblue: #1bb4e8;
+    --ocher: #c6b07f;
+    --footer: #CBCFD3;
+    --pagefont: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: var(--pagefont);
+}
+
+.page {
+    margin: 0 auto;
+    width: 980px;
+}
+
+header {
+    background-color: var(--darkblue);
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 980px;
+    z-index: 10;
+}
+
+header h1 {
+    color: var(--lightblue);
+    font: italic 700 1.7em var(--pagefont);
+}
+
+main {
+    padding-top: 130px;
+    background-color: white;
+    min-height: 500px;
+    padding-bottom: 40px;
+}
+
+#loginForm {
+    background-color: white;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #c7c7c7;
+    box-shadow: 0 0 10px #00000022;
+}
+
+.entry {
+    padding: 10px 0;
+}
+
+.entry label {
+    font: normal 700 0.8em var(--pagefont);
+    color: var(--ocher);
+    text-transform: uppercase;
+}
+
+.entry input {
+    width: 100%;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-family: var(--pagefont);
+    margin-top: 5px;
+    background: transparent;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    font: normal 600 0.75em var(--pagefont);
+    background-color: var(--darkblue);
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--box);
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#msgErro {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+    display: none;
+}
+
+footer {
+    font-size: 0.75em;
+    background-color: var(--footer);
+    margin-top: 60px;
+}
+
+footer p {
+    width: 980px;
+    padding: 25px 0;
+    background-color: var(--background);
+    margin: 0 auto;
+    text-indent: 15px;
+}
